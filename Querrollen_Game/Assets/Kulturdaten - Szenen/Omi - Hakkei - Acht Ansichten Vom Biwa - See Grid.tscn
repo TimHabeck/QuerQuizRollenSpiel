@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Kulturdaten/Omi-Hakkei - Acht Ansichten vom Biwa-See/Omi-Hakkei - Acht Ansichten vom Biwa-See 2.jpg" type="Texture" id=1]
+[ext_resource path="res://Assets/Kulturdaten/Omi-Hakkei - Acht Ansichten vom Biwa-See/Omi-Hakkei - Acht Ansichten vom Biwa-See 1.jpg" type="Texture" id=2]
+
+[node name="Omi - Hakkei - Acht Ansichten Vom Biwa - See Grid" type="Node2D"]
+
+[node name="Omi-Hakkei-AchtAnsichtenVomBiwa-See1" type="Sprite" parent="."]
+position = Vector2( -1041, 0 )
+texture = ExtResource( 2 )
+
+[node name="Omi-Hakkei-AchtAnsichtenVomBiwa-See2" type="Sprite" parent="."]
+position = Vector2( 4999, 0 )
+texture = ExtResource( 1 )
