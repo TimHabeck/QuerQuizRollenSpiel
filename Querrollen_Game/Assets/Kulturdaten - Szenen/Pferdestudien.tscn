@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Kulturdaten/Pferdestudien/Pferdestudien 3.jpg" type="Texture" id=1]
+[ext_resource path="res://Assets/Kulturdaten/Pferdestudien/Pferdestudien 1.jpg" type="Texture" id=2]
+[ext_resource path="res://Assets/Kulturdaten/Pferdestudien/Pferdestudien 2.jpg" type="Texture" id=3]
+
+[node name="Pferdestudien" type="Node2D"]
+
+[node name="Pferdestudien1" type="Sprite" parent="."]
+position = Vector2( -6878, 0 )
+texture = ExtResource( 2 )
+
+[node name="Pferdestudien2" type="Sprite" parent="."]
+position = Vector2( 3122, 0 )
+texture = ExtResource( 3 )
+
+[node name="Pferdestudien3" type="Sprite" parent="."]
+position = Vector2( 10000, 0 )
+texture = ExtResource( 1 )
