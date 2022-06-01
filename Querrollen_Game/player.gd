@@ -3,11 +3,11 @@ extends KinematicBody2D
 
 var velocity : Vector2
 var acceleration := 1000
-var max_speed := 10
-var friction := 0.2
+var max_speed := 500
+var friction := 0.5
 
 func _process(delta):
-#Basic movement system
+	#Basic movement system
 	var input_vector =  Vector2.ZERO
 	input_vector.x = Input.get_action_strength('ui_right') - Input.get_action_strength('ui_left')
 	input_vector.y = Input.get_action_strength('ui_down') - Input.get_action_strength('ui_up')
@@ -15,7 +15,7 @@ func _process(delta):
 
 	if input_vector != Vector2.ZERO:
 		velocity += input_vector * acceleration * delta
-		velocity += velocity.clamped(max_speed)
+		velocity = velocity.clamped(max_speed)
 	else:
 		velocity  = velocity.linear_interpolate(Vector2.ZERO, friction)
 		
