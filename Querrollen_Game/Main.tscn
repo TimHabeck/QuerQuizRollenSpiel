@@ -1,7 +1,5 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assets/Kulturdaten/9200170b_Inuoumono - Hundehatz.jpg" type="Texture" id=1]
-[ext_resource path="res://Scripts/Background.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Human-Sheet.png" type="Texture" id=3]
 [ext_resource path="res://player.gd" type="Script" id=4]
 
@@ -41,11 +39,6 @@ tracks/0/keys = {
 }
 
 [node name="Node2D" type="Node2D"]
-
-[node name="Hundehatz" type="Sprite" parent="."]
-position = Vector2( 5842, 587 )
-texture = ExtResource( 1 )
-script = ExtResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
