@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Human-Sheet.png" type="Texture" id=2]
@@ -6,7 +6,10 @@
 [ext_resource path="res://Assets/Kulturdaten/Chushingura - Die 47 Ronin Teil 1/Chushingura - Die 47 Ronin Teil 1 1.jpg" type="Texture" id=4]
 [ext_resource path="res://Assets/trak2_wall1c.tga" type="Texture" id=5]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/1 - Chushingura - Die 47 Ronin Teil 1 Grid.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/target_thumbnails/Screenshot 2022-06-02 115600.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/Mission_Controller.gd" type="Script" id=7]
+
+[sub_resource type="CanvasItemMaterial" id=7]
+light_mode = 2
 
 [sub_resource type="CanvasItemMaterial" id=4]
 light_mode = 2
@@ -53,8 +56,13 @@ extents = Vector2( 34.5, 32 )
 polygon = PoolVector2Array( -306, 20, -306, 85, -236, 85, -236, 19, -271.623, 19.5089 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
 
-[node name="Chushingura - Die 47 Ronin Teil 1 Grid" parent="." instance=ExtResource( 6 )]
+[node name="Background_Container" type="Node" parent="."]
+
+[node name="Chushingura - Die 47 Ronin Teil 1 Grid" parent="Background_Container" instance=ExtResource( 6 )]
+material = SubResource( 7 )
+use_parent_material = false
 scale = Vector2( 0.5, 0.5 )
 
 [node name="background" type="Sprite" parent="."]
@@ -86,6 +94,7 @@ anims/Walking = SubResource( 3 )
 current = true
 
 [node name="Light2D" type="Light2D" parent="KinematicBody2D"]
+visible = false
 position = Vector2( 27, 0 )
 texture = ExtResource( 3 )
 texture_scale = 3.0
@@ -166,13 +175,3 @@ editor_only = true
 texture = ExtResource( 3 )
 texture_scale = 10.0
 energy = 0.8
-
-[node name="Control" type="Control" parent="."]
-anchor_left = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-
-[node name="Sprite" type="Sprite" parent="Control"]
-position = Vector2( 736, -401 )
-scale = Vector2( 0.275124, 0.271398 )
-texture = ExtResource( 7 )

@@ -8,27 +8,35 @@
 [ext_resource path="res://Assets/Kulturdaten/Moko Shurai-Ekotoba/Moko Shurai-Ekotoba 1.jpg" type="Texture" id=6]
 
 [node name="Moko Shurai - Ekotoba Grid" type="Node2D"]
+use_parent_material = true
+z_index = -1
 
 [node name="MokoShurai-Ekotoba1" type="Sprite" parent="."]
+use_parent_material = true
 position = Vector2( -23243, 0 )
 texture = ExtResource( 6 )
 
 [node name="MokoShurai-Ekotoba2" type="Sprite" parent="."]
+use_parent_material = true
 position = Vector2( -13243, 0 )
 texture = ExtResource( 2 )
 
 [node name="MokoShurai-Ekotoba3" type="Sprite" parent="."]
+use_parent_material = true
 position = Vector2( -3243, 0 )
 texture = ExtResource( 3 )
 
 [node name="MokoShurai-Ekotoba4" type="Sprite" parent="."]
+use_parent_material = true
 position = Vector2( 6757, 0 )
 texture = ExtResource( 4 )
 
 [node name="MokoShurai-Ekotoba5" type="Sprite" parent="."]
+use_parent_material = true
 position = Vector2( 16757, 0 )
 texture = ExtResource( 5 )
 
 [node name="MokoShurai-Ekotoba6" type="Sprite" parent="."]
+use_parent_material = true
 position = Vector2( 25000, 0 )
 texture = ExtResource( 1 )

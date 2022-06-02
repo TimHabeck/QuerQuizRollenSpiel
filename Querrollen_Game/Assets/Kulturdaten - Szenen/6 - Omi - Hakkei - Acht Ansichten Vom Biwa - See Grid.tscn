@@ -7,8 +7,10 @@
 
 [node name="Omi-Hakkei-AchtAnsichtenVomBiwa-See1" type="Sprite" parent="."]
 position = Vector2( -1041, 0 )
+z_index = -1
 texture = ExtResource( 2 )
 
 [node name="Omi-Hakkei-AchtAnsichtenVomBiwa-See2" type="Sprite" parent="."]
 position = Vector2( 4999, 0 )
+z_index = -1
 texture = ExtResource( 1 )
