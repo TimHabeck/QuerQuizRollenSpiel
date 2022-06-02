@@ -8,12 +8,15 @@
 
 [node name="Pferdestudien1" type="Sprite" parent="."]
 position = Vector2( -6878, 0 )
+z_index = -1
 texture = ExtResource( 2 )
 
 [node name="Pferdestudien2" type="Sprite" parent="."]
 position = Vector2( 3122, 0 )
+z_index = -1
 texture = ExtResource( 3 )
 
 [node name="Pferdestudien3" type="Sprite" parent="."]
 position = Vector2( 10000, 0 )
+z_index = -1
 texture = ExtResource( 1 )

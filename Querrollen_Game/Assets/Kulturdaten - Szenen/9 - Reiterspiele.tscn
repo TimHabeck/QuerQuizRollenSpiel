@@ -9,16 +9,20 @@
 
 [node name="Reiterspiele1" type="Sprite" parent="."]
 position = Vector2( -10429, 0 )
+z_index = -1
 texture = ExtResource( 4 )
 
 [node name="Reiterspiele2" type="Sprite" parent="."]
 position = Vector2( -429, 0 )
+z_index = -1
 texture = ExtResource( 1 )
 
 [node name="Reiterspiele3" type="Sprite" parent="."]
 position = Vector2( 9571, 0 )
+z_index = -1
 texture = ExtResource( 2 )
 
 [node name="Reiterspiele4" type="Sprite" parent="."]
 position = Vector2( 15000, 0 )
+z_index = -1
 texture = ExtResource( 3 )

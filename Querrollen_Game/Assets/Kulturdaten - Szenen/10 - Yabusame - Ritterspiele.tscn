@@ -9,16 +9,20 @@
 
 [node name="Yabusame-Ritterspiele1" type="Sprite" parent="."]
 position = Vector2( -12408, 0 )
+z_index = -1
 texture = ExtResource( 4 )
 
 [node name="Yabusame-Ritterspiele2" type="Sprite" parent="."]
 position = Vector2( -2408, 0 )
+z_index = -1
 texture = ExtResource( 1 )
 
 [node name="Yabusame-Ritterspiele3" type="Sprite" parent="."]
 position = Vector2( 7592, 0 )
+z_index = -1
 texture = ExtResource( 2 )
 
 [node name="Yabusame-Ritterspiele4" type="Sprite" parent="."]
 position = Vector2( 15000, 0 )
+z_index = -1
 texture = ExtResource( 3 )
