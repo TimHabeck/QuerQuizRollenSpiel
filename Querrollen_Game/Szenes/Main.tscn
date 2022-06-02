@@ -62,7 +62,7 @@ script = ExtResource( 7 )
 
 [node name="Chushingura - Die 47 Ronin Teil 1 Grid" parent="Background_Container" instance=ExtResource( 6 )]
 material = SubResource( 7 )
-position = Vector2( -392, -15 )
+position = Vector2( -392, -4 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="background" type="Sprite" parent="."]
