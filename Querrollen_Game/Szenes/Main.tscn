@@ -62,7 +62,7 @@ script = ExtResource( 7 )
 
 [node name="Chushingura - Die 47 Ronin Teil 1 Grid" parent="Background_Container" instance=ExtResource( 6 )]
 material = SubResource( 7 )
-use_parent_material = false
+position = Vector2( -392, -15 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="background" type="Sprite" parent="."]
@@ -94,7 +94,6 @@ anims/Walking = SubResource( 3 )
 current = true
 
 [node name="Light2D" type="Light2D" parent="KinematicBody2D"]
-visible = false
 position = Vector2( 27, 0 )
 texture = ExtResource( 3 )
 texture_scale = 3.0
@@ -169,9 +168,8 @@ shape = SubResource( 6 )
 occluder = SubResource( 5 )
 
 [node name="devLight2D" type="Light2D" parent="."]
-visible = false
 position = Vector2( 27, 0 )
+scale = Vector2( 10, 5 )
 editor_only = true
 texture = ExtResource( 3 )
-texture_scale = 10.0
-energy = 0.8
+texture_scale = 50.0

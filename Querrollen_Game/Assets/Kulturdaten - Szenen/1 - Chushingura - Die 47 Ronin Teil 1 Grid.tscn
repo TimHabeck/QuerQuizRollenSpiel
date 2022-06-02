@@ -16,11 +16,171 @@ use_parent_material = true
 script = ExtResource( 7 )
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -19647, 18 )
 script = ExtResource( 6 )
 id = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -2232, -29 )
+shape = SubResource( 1 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( -17474, -54 )
+script = ExtResource( 6 )
+id = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource( 1 )
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2( -15920, -5 )
+script = ExtResource( 6 )
+id = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+shape = SubResource( 1 )
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2( -14360, 3 )
+script = ExtResource( 6 )
+id = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+shape = SubResource( 1 )
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2( -12707, -1 )
+script = ExtResource( 6 )
+id = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+shape = SubResource( 1 )
+
+[node name="Area2D6" type="Area2D" parent="."]
+position = Vector2( -11067, -9 )
+script = ExtResource( 6 )
+id = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+shape = SubResource( 1 )
+
+[node name="Area2D7" type="Area2D" parent="."]
+position = Vector2( -9393, -17 )
+script = ExtResource( 6 )
+id = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7"]
+shape = SubResource( 1 )
+
+[node name="Area2D8" type="Area2D" parent="."]
+position = Vector2( -7863, 4 )
+script = ExtResource( 6 )
+id = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
+shape = SubResource( 1 )
+
+[node name="Area2D9" type="Area2D" parent="."]
+position = Vector2( -5268, 17 )
+script = ExtResource( 6 )
+id = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9"]
+shape = SubResource( 1 )
+
+[node name="Area2D10" type="Area2D" parent="."]
+position = Vector2( -3585, 52 )
+script = ExtResource( 6 )
+id = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10"]
+shape = SubResource( 1 )
+
+[node name="Area2D11" type="Area2D" parent="."]
+position = Vector2( -1887, 14 )
+script = ExtResource( 6 )
+id = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11"]
+shape = SubResource( 1 )
+
+[node name="Area2D12" type="Area2D" parent="."]
+position = Vector2( 69, 14 )
+script = ExtResource( 6 )
+id = 12
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12"]
+shape = SubResource( 1 )
+
+[node name="Area2D13" type="Area2D" parent="."]
+position = Vector2( 1741, 18 )
+script = ExtResource( 6 )
+id = 13
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D13"]
+shape = SubResource( 1 )
+
+[node name="Area2D14" type="Area2D" parent="."]
+position = Vector2( 3475, 18 )
+script = ExtResource( 6 )
+id = 14
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D14"]
+shape = SubResource( 1 )
+
+[node name="Area2D15" type="Area2D" parent="."]
+position = Vector2( 5254, -7 )
+script = ExtResource( 6 )
+id = 15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D15"]
+shape = SubResource( 1 )
+
+[node name="Area2D16" type="Area2D" parent="."]
+position = Vector2( 7162, 5 )
+script = ExtResource( 6 )
+id = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D16"]
+shape = SubResource( 1 )
+
+[node name="Area2D17" type="Area2D" parent="."]
+position = Vector2( 8986, 13 )
+script = ExtResource( 6 )
+id = 17
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D17"]
+shape = SubResource( 1 )
+
+[node name="Area2D18" type="Area2D" parent="."]
+position = Vector2( 10844, -1 )
+script = ExtResource( 6 )
+id = 18
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D18"]
+shape = SubResource( 1 )
+
+[node name="Area2D19" type="Area2D" parent="."]
+position = Vector2( 12686, -12 )
+script = ExtResource( 6 )
+id = 19
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D19"]
+shape = SubResource( 1 )
+
+[node name="Area2D20" type="Area2D" parent="."]
+position = Vector2( 15057, -23 )
+script = ExtResource( 6 )
+id = 20
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D20"]
+shape = SubResource( 1 )
+
+[node name="Area2D21" type="Area2D" parent="."]
+position = Vector2( 18024, -3 )
+script = ExtResource( 6 )
+id = 21
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D21"]
 shape = SubResource( 1 )
 
 [node name="Chushingura-Die47RoninTeil11" type="Sprite" parent="."]
@@ -55,3 +215,43 @@ texture = ExtResource( 5 )
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_player_entered"]
 [connection signal="player_entered" from="Area2D" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D2" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D3" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D4" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D5" to="Area2D5" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D5" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D6" to="Area2D6" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D6" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D7" to="Area2D7" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D7" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D8" to="Area2D8" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D8" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D9" to="Area2D9" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D9" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D10" to="Area2D10" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D10" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D11" to="Area2D11" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D11" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D12" to="Area2D12" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D12" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D13" to="Area2D13" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D13" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D14" to="Area2D14" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D14" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D15" to="Area2D15" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D15" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D16" to="Area2D16" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D16" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D17" to="Area2D17" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D17" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D18" to="Area2D18" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D18" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D19" to="Area2D19" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D19" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D20" to="Area2D20" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D20" to="." method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D21" to="Area2D21" method="_on_player_entered"]
+[connection signal="player_entered" from="Area2D21" to="." method="_on_player_entered"]

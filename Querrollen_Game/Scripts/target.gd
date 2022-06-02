@@ -11,5 +11,4 @@ func get_id():
 	return id
 
 func _on_player_entered(body):
-	print("signal out target")
 	emit_signal("player_entered", id)
