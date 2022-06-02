@@ -5,4 +5,5 @@ func _ready():
 		i.connect("player_entered", self, "_player_found_something")
 
 func _player_found_something(area_id):
-	pass
+	print("Player enter the area:")
+	print(area_id)
