@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Human-Sheet.png" type="Texture" id=2]
@@ -9,6 +9,10 @@
 [ext_resource path="res://Scripts/Mission_Controller.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/5 - Moko Shurai - Ekotoba Grid.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Szenes/Interface.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/ui/target_thumbnails/target 2.png" type="Texture" id=10]
+[ext_resource path="res://Assets/ui/target_thumbnails/target 3.png" type="Texture" id=11]
+[ext_resource path="res://Assets/ui/target_thumbnails/target 4.png" type="Texture" id=12]
+[ext_resource path="res://Assets/ui/target_thumbnails/target1.png" type="Texture" id=13]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 2
@@ -63,6 +67,7 @@ polygon = PoolVector2Array( -36, -34, -36, 32, 34, 32, 34, -34 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 7 )
+images = [ ExtResource( 13 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ]
 
 [node name="Background_Container" type="Node" parent="."]
 
