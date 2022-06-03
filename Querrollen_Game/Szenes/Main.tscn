@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Human-Sheet.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/Kulturdaten - Szenen/1 - Chushingura - Die 47 Ronin Teil 1 Grid.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Mission_Controller.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/5 - Moko Shurai - Ekotoba Grid.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Szenes/Interface.tscn" type="PackedScene" id=9]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 2
@@ -110,6 +111,12 @@ position = Vector2( 0, 0.5 )
 texture = ExtResource( 3 )
 texture_scale = 2.0
 shadow_enabled = true
+
+[node name="Interface" parent="KinematicBody2D" instance=ExtResource( 9 )]
+margin_left = -376.0
+margin_top = -206.0
+margin_right = -336.0
+margin_bottom = -166.0
 
 [node name="devLight2D" type="Light2D" parent="."]
 position = Vector2( 27, 0 )
