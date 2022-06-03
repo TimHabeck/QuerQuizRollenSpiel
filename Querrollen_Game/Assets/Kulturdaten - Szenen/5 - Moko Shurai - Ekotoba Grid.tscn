@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Assets/Kulturdaten/Moko Shurai-Ekotoba/Moko Shurai-Ekotoba 6.jpg" type="Texture" id=1]
 [ext_resource path="res://Assets/Kulturdaten/Moko Shurai-Ekotoba/Moko Shurai-Ekotoba 2.jpg" type="Texture" id=2]
@@ -6,6 +6,42 @@
 [ext_resource path="res://Assets/Kulturdaten/Moko Shurai-Ekotoba/Moko Shurai-Ekotoba 4.jpg" type="Texture" id=4]
 [ext_resource path="res://Assets/Kulturdaten/Moko Shurai-Ekotoba/Moko Shurai-Ekotoba 5.jpg" type="Texture" id=5]
 [ext_resource path="res://Assets/Kulturdaten/Moko Shurai-Ekotoba/Moko Shurai-Ekotoba 1.jpg" type="Texture" id=6]
+[ext_resource path="res://Scripts/target.gd" type="Script" id=7]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 463.0
+height = 1180.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 468.0
+height = 1098.0
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 449.0
+height = 976.0
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 544.015
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 509.0
+height = 1480.0
+
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 494.0
+height = 712.0
+
+[sub_resource type="CapsuleShape2D" id=7]
+radius = 477.0
+height = 2078.0
+
+[sub_resource type="CapsuleShape2D" id=8]
+radius = 463.0
+height = 934.0
+
+[sub_resource type="CapsuleShape2D" id=9]
+radius = 397.0
+height = 1158.0
 
 [node name="Moko Shurai - Ekotoba Grid" type="Node2D"]
 use_parent_material = true
@@ -40,3 +76,161 @@ texture = ExtResource( 5 )
 use_parent_material = true
 position = Vector2( 25000, 0 )
 texture = ExtResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -14066, -8 )
+script = ExtResource( 7 )
+id = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 212, -3 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( -10972, -48 )
+script = ExtResource( 7 )
+id = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( -168, 0 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2( -8718, -92 )
+script = ExtResource( 7 )
+id = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2( 142, 3 )
+rotation = 1.5708
+shape = SubResource( 3 )
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2( -5959, -45 )
+script = ExtResource( 7 )
+id = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( 51, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2( -3569, -26 )
+script = ExtResource( 7 )
+id = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2( 51, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D6" type="Area2D" parent="."]
+position = Vector2( -1480, -34 )
+script = ExtResource( 7 )
+id = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2( 51, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D7" type="Area2D" parent="."]
+position = Vector2( 699, -73 )
+script = ExtResource( 7 )
+id = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7"]
+position = Vector2( 51, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D8" type="Area2D" parent="."]
+position = Vector2( 3329, -51 )
+script = ExtResource( 7 )
+id = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
+position = Vector2( 108, 14 )
+rotation = 1.5708
+shape = SubResource( 5 )
+
+[node name="Area2D9" type="Area2D" parent="."]
+position = Vector2( 7009, 29 )
+script = ExtResource( 7 )
+id = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9"]
+position = Vector2( 51, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D10" type="Area2D" parent="."]
+position = Vector2( 9513, 14 )
+script = ExtResource( 7 )
+id = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10"]
+position = Vector2( 135, -16 )
+rotation = 1.5708
+shape = SubResource( 6 )
+
+[node name="Area2D11" type="Area2D" parent="."]
+position = Vector2( 12498, 2 )
+script = ExtResource( 7 )
+id = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11"]
+position = Vector2( 51, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D12" type="Area2D" parent="."]
+position = Vector2( 16399, 60 )
+script = ExtResource( 7 )
+id = 12
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12"]
+rotation = 1.5708
+shape = SubResource( 7 )
+
+[node name="Area2D13" type="Area2D" parent="."]
+position = Vector2( 19991, 4 )
+script = ExtResource( 7 )
+id = 13
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D13"]
+position = Vector2( -395, 4 )
+shape = SubResource( 4 )
+
+[node name="Area2D14" type="Area2D" parent="."]
+position = Vector2( 22743, 8 )
+script = ExtResource( 7 )
+id = 14
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D14"]
+position = Vector2( -226, -11 )
+rotation = 1.5708
+shape = SubResource( 8 )
+
+[node name="Area2D15" type="Area2D" parent="."]
+position = Vector2( 25298, -46 )
+script = ExtResource( 7 )
+id = 15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D15"]
+position = Vector2( 210, 3 )
+rotation = 1.5708
+shape = SubResource( 9 )
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D5" to="Area2D5" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D6" to="Area2D6" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D7" to="Area2D7" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D8" to="Area2D8" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D9" to="Area2D9" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D10" to="Area2D10" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D11" to="Area2D11" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D12" to="Area2D12" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D13" to="Area2D13" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D14" to="Area2D14" method="_on_player_entered"]
+[connection signal="body_entered" from="Area2D15" to="Area2D15" method="_on_player_entered"]
