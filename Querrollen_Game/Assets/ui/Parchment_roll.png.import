@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/label_bg.png-76571b7d9b13982060e6bbd52c0ea858.stex"
+path="res://.import/Parchment_roll.png-61cf75b4eec99604cad10cd56f5c6747.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ui/label_bg.png"
-dest_files=[ "res://.import/label_bg.png-76571b7d9b13982060e6bbd52c0ea858.stex" ]
+source_file="res://Assets/ui/Parchment_roll.png"
+dest_files=[ "res://.import/Parchment_roll.png-61cf75b4eec99604cad10cd56f5c6747.stex" ]
 
 [params]
 
