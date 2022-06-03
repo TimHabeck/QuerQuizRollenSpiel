@@ -14,6 +14,7 @@ radius = 491.407
 [node name="Chushingura - Die 47 Ronin Teil 1 Grid" type="Node2D"]
 use_parent_material = true
 script = ExtResource( 7 )
+scroll_id = 1
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( -19647, 18 )

@@ -32,5 +32,3 @@ func _process(delta):
 	if input_vector != Vector2.ZERO:
 		$Sprite.frame_coords.y = direction
 	
-	
-		
