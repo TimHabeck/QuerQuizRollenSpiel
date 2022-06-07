@@ -27,6 +27,8 @@ func _physics_process(delta):
 		$Sprite.frame_coords.y = 6
 	get_input()
 	velocity.y += gravity * delta
+	if velocity.y > 1000:
+		velocity.y = 1100
 	velocity = move_and_slide(velocity, Vector2.UP)
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
