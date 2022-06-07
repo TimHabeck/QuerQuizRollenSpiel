@@ -1,34 +1,33 @@
 extends KinematicBody2D
 
+export (int) var speed = 500
+export (int) var jump_speed = -1200
+export (int) var gravity = 3000
 
-var velocity : Vector2
-var speed := 500
+var velocity = Vector2.ZERO
+var facing_right = true
 
-func _process(delta):
-	#Basic movement system
-	var input_vector =  Vector2.ZERO
-	input_vector.x = Input.get_action_strength('ui_right') - Input.get_action_strength('ui_left')
-	input_vector.y = Input.get_action_strength('ui_down') - Input.get_action_strength('ui_up')
-	velocity = input_vector.normalized() * speed
-		
-	velocity = move_and_slide(velocity)
-
-	if input_vector != Vector2.ZERO:
-		if $AnimationPlayer.get_current_animation() != 'Walking':
-		   $AnimationPlayer.stop()
-		   $AnimationPlayer.play('Walking')
+func get_input():
+	velocity.x = 0
+	if Input.is_action_pressed("right"):
+		velocity.x += speed
+		facing_right = true
+		$AnimationPlayer.play('Walking')
+	elif Input.is_action_pressed("left"):
+		velocity.x -= speed
+		facing_right = false
+		$AnimationPlayer.play('Walking')
 	else:
-		if $AnimationPlayer.get_current_animation() != 'Idle':
-		   $AnimationPlayer.stop()
-		   $AnimationPlayer.play('Idle')
-
-	var direction = -int(input_vector.normalized().angle()*(4/PI)) + 2
-	
-	if direction > 7:
-		direction -= 8
-	if direction < 0:
-		direction += 8
-	
-	if input_vector != Vector2.ZERO:
-		$Sprite.frame_coords.y = direction
-	
+		$AnimationPlayer.play('Idle')
+		
+func _physics_process(delta): 
+	if facing_right:
+		$Sprite.frame_coords.y = 2
+	else:
+		$Sprite.frame_coords.y = 6
+	get_input()
+	velocity.y += gravity * delta
+	velocity = move_and_slide(velocity, Vector2.UP)
+	if Input.is_action_just_pressed("jump"):
+		if is_on_floor():
+			velocity.y = jump_speed
