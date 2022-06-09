@@ -24,7 +24,7 @@ func _physics_process(delta):
 	if facing_right:
 		$Sprite.frame_coords.y = 2
 	else:
-		$Sprite.frame_coords.y = 6
+		$Sprite.frame_coords.y = 3
 	get_input()
 	velocity.y += gravity * delta
 	if velocity.y > 1000:
