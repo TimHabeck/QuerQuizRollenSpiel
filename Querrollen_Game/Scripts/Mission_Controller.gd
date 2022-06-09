@@ -14,18 +14,23 @@ onready var targets = [
 var current_target:String
 
 func _ready():
+	randomize()
+	
 	for i in find_node("Background_Container").get_children():
 		i.connect("player_entered", self, "_player_found_something")
 		
 	interface = get_node("./KinematicBody2D/Interface")
-	
-	new_task(targets[0])
-	targets.remove(0)
 
+
+	var number = floor(rand_range(0, len(targets)))
+	new_task(targets[number])
+	targets.remove(number)
+	
 func _player_found_something(area_id):
 	if area_id == current_target:
-		new_task(targets[0])
-		targets.remove(0)
+		var number = floor(rand_range(0, len(targets)))
+		new_task(targets[number])
+		targets.remove(number)
 	
 func new_task(target):
 	var id = target["id"]
