@@ -20,7 +20,7 @@ light_mode = 2
 light_mode = 2
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 15.5, 41.5 )
+extents = Vector2( 13, 34.5 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle"
@@ -88,13 +88,13 @@ scale = Vector2( 2, 2 )
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( -1, -9 )
+position = Vector2( -3, -14 )
 shape = SubResource( 9 )
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 light_mask = 2
-position = Vector2( -1.14441e-05, -11 )
-scale = Vector2( 1.84375, 1.95313 )
+position = Vector2( -3.17201, -13.114 )
+scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 2 )
 hframes = 6
 vframes = 10
@@ -9291,7 +9291,7 @@ occluder = SubResource( 10 )
 [node name="plattforms" type="Node" parent="."]
 
 [node name="plattform1" type="StaticBody2D" parent="plattforms"]
-position = Vector2( -191, 601 )
+position = Vector2( -139, 647 )
 rotation = -3.14159
 scale = Vector2( 1.37679, -0.284358 )
 
@@ -9306,6 +9306,24 @@ position = Vector2( -1, -1 )
 shape = SubResource( 6 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform1"]
+occluder = SubResource( 10 )
+
+[node name="plattform17" type="StaticBody2D" parent="plattforms"]
+position = Vector2( -660, 544 )
+rotation = -3.14159
+scale = Vector2( 1.37679, -0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform17"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform17"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform17"]
 occluder = SubResource( 10 )
 
 [node name="plattform2" type="StaticBody2D" parent="plattforms"]
