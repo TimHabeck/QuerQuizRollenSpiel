@@ -9,5 +9,4 @@ func _ready():
 	
 func _on_player_entered(area_id):
 	var combined_id = str(scroll_id) + ":" + str(area_id)
-	print(combined_id)
 	emit_signal("player_entered", combined_id)

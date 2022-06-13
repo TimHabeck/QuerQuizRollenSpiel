@@ -6,7 +6,7 @@ export (int) var gravity = 3000
 
 var velocity = Vector2.ZERO
 var facing_right = true
-
+	
 func get_input():
 	velocity.x = 0
 	if Input.is_action_pressed("right"):
@@ -33,3 +33,10 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			velocity.y = jump_speed
+
+func change_light_size(amount):
+	var light = find_node("PlayerLight")
+	var size = light.get_texture_scale()
+	light.set_texture_scale(size+amount)
+	
+

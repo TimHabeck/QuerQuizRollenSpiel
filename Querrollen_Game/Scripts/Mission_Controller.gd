@@ -38,3 +38,10 @@ func new_task(target):
 	
 	current_target = id
 	interface.new_texture(img)
+
+func test():
+	print("works")
+
+func timed_action(f : FuncRef, time, args=[]):
+	yield(get_tree().create_timer(float(time)), "timeout")
+	f.call_funcv(args)

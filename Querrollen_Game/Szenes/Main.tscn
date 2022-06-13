@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/character/samurai.png" type="Texture" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Assets/ui/target_thumbnails/target 4.png" type="Texture" id=12]
 [ext_resource path="res://Assets/ui/target_thumbnails/target1.png" type="Texture" id=13]
 [ext_resource path="res://Scripts/interface.gd" type="Script" id=14]
+[ext_resource path="res://Light_Item.tscn" type="PackedScene" id=15]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 2
@@ -114,10 +115,9 @@ anims/Walking = SubResource( 3 )
 position = Vector2( 0, 1 )
 current = true
 
-[node name="Light2D" type="Light2D" parent="KinematicBody2D"]
+[node name="PlayerLight" type="Light2D" parent="KinematicBody2D"]
 position = Vector2( 0, 0.5 )
 texture = ExtResource( 3 )
-texture_scale = 2.0
 shadow_enabled = true
 
 [node name="Interface" parent="KinematicBody2D" instance=ExtResource( 9 )]
@@ -9710,3 +9710,6 @@ shape = SubResource( 6 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform16"]
 occluder = SubResource( 10 )
+
+[node name="Light_Item" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1052, 32 )
