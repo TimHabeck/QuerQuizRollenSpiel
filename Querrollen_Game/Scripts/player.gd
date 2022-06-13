@@ -6,8 +6,6 @@ export (int) var gravity = 3000
 
 var velocity = Vector2.ZERO
 var facing_right = true
-
-var double_jump = false
 	
 func get_input():
 	velocity.x = 0
@@ -41,9 +39,6 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			velocity.y = jump_speed
-
-func switch_double_jump(state : bool):
-	double_jump = state
 
 func change_jump_speed(amount):
 	jump_speed -= amount
