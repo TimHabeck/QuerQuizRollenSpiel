@@ -28,6 +28,8 @@ texture = ExtResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -4323, 34 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 3 )
 id = 1
 
@@ -37,6 +39,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D2" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -2424, -21 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 3 )
 id = 2
 
@@ -46,6 +50,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D3" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -589, 4 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 3 )
 id = 3
 
@@ -55,6 +61,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D4" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 1735, -28 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 3 )
 id = 4
 
@@ -65,6 +73,8 @@ shape = SubResource( 2 )
 
 [node name="Area2D5" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 3903, -19 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 3 )
 id = 5
 

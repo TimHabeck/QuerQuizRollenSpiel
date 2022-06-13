@@ -91,6 +91,7 @@ scale = Vector2( 0.4, 0.4 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 scale = Vector2( 2, 2 )
+collision_layer = 3
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]

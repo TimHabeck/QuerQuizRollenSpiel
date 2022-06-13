@@ -48,6 +48,8 @@ texture = ExtResource( 6 )
 
 [node name="Area2D" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -23762, 8 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 1
 
@@ -57,6 +59,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D2" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -22452, -9 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 2
 
@@ -66,6 +70,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D3" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -20908, -32 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 3
 
@@ -75,6 +81,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D4" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -19344, -29 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 4
 
@@ -84,6 +92,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D5" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -17937, -2 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 5
 
@@ -93,6 +103,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D6" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -16578, 18 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 6
 
@@ -102,6 +114,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D7" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -15179, 11 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 7
 
@@ -111,6 +125,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D8" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -13645, 18 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 8
 
@@ -120,6 +136,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D9" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -12259, 31 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 9
 
@@ -129,6 +147,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D10" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -10826, 38 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 10
 
@@ -138,6 +158,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D11" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -9466, 38 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 11
 
@@ -147,6 +169,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D12" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -7914, 22 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 12
 
@@ -156,6 +180,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D13" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -6530, 30 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 13
 
@@ -165,6 +191,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D14" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -5154, 22 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 14
 
@@ -174,6 +202,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D15" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -3746, 38 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 15
 
@@ -183,6 +213,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D16" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -2314, 70 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 16
 
@@ -192,6 +224,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D17" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -890, 46 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 17
 
@@ -201,6 +235,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D18" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 537, 17 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 18
 
@@ -210,6 +246,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D19" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 2031, 46 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 19
 
@@ -219,6 +257,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D20" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 3591, 27 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 20
 
@@ -228,6 +268,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D21" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 5028, 17 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 21
 
@@ -237,6 +279,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D22" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 6322, 27 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 22
 
@@ -246,6 +290,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D23" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 7873, 27 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 23
 
@@ -255,6 +301,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D24" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 9357, 37 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 24
 
@@ -264,6 +312,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D25" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 10794, 37 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 25
 
@@ -273,6 +323,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D26" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 12326, 8 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 26
 
@@ -282,6 +334,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D27" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 13616, 28 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 27
 
@@ -291,6 +345,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D28" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 14997, 38 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 28
 
@@ -300,6 +356,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D29" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 16307, 48 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 29
 
@@ -309,6 +367,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D30" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 17607, 48 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 30
 
@@ -318,6 +378,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D31" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 19089, 38 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 31
 
@@ -327,6 +389,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D32" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 20460, 78 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 32
 
@@ -336,6 +400,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D33" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 21780, 68 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 33
 
@@ -345,6 +411,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D34" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 23221, 58 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 34
 
@@ -354,6 +422,8 @@ shape = SubResource( 1 )
 
 [node name="Area2D35" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 25094, 35 )
+collision_layer = 0
+collision_mask = 2
 script = ExtResource( 7 )
 id = 35
 
