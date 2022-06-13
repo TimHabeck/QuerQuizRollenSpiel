@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/character/samurai.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Assets/ui/target_thumbnails/target 3.png" type="Texture" id=11]
 [ext_resource path="res://Assets/ui/target_thumbnails/target 4.png" type="Texture" id=12]
 [ext_resource path="res://Assets/ui/target_thumbnails/target1.png" type="Texture" id=13]
+[ext_resource path="res://Scripts/interface.gd" type="Script" id=14]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 2
@@ -123,6 +124,7 @@ margin_left = -376.0
 margin_top = -206.0
 margin_right = -336.0
 margin_bottom = -166.0
+script = ExtResource( 14 )
 
 [node name="devLight2D" type="Light2D" parent="."]
 position = Vector2( 27, 0 )

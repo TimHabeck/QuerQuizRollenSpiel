@@ -5,7 +5,7 @@ export var id:int
 signal player_entered(area_id)
 
 func _ready():
-	connect("player_entered", owner, "_player_found_something", [id])
+	connect("player_entered", owner, "_on_player_entered", [id])
 
 func get_id():
 	return id
