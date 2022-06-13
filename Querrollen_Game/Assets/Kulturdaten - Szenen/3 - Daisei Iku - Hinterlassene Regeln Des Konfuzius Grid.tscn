@@ -46,7 +46,7 @@ position = Vector2( 25000, 0 )
 z_index = -1
 texture = ExtResource( 6 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -23762, 8 )
 script = ExtResource( 7 )
 id = 1
@@ -55,7 +55,7 @@ id = 1
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D2" type="Area2D" parent="."]
+[node name="Area2D2" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -22452, -9 )
 script = ExtResource( 7 )
 id = 2
@@ -64,7 +64,7 @@ id = 2
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D3" type="Area2D" parent="."]
+[node name="Area2D3" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -20908, -32 )
 script = ExtResource( 7 )
 id = 3
@@ -73,7 +73,7 @@ id = 3
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D4" type="Area2D" parent="."]
+[node name="Area2D4" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -19344, -29 )
 script = ExtResource( 7 )
 id = 4
@@ -82,7 +82,7 @@ id = 4
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D5" type="Area2D" parent="."]
+[node name="Area2D5" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -17937, -2 )
 script = ExtResource( 7 )
 id = 5
@@ -91,7 +91,7 @@ id = 5
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D6" type="Area2D" parent="."]
+[node name="Area2D6" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -16578, 18 )
 script = ExtResource( 7 )
 id = 6
@@ -100,7 +100,7 @@ id = 6
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D7" type="Area2D" parent="."]
+[node name="Area2D7" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -15179, 11 )
 script = ExtResource( 7 )
 id = 7
@@ -109,7 +109,7 @@ id = 7
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D8" type="Area2D" parent="."]
+[node name="Area2D8" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -13645, 18 )
 script = ExtResource( 7 )
 id = 8
@@ -118,7 +118,7 @@ id = 8
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D9" type="Area2D" parent="."]
+[node name="Area2D9" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -12259, 31 )
 script = ExtResource( 7 )
 id = 9
@@ -127,7 +127,7 @@ id = 9
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D10" type="Area2D" parent="."]
+[node name="Area2D10" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -10826, 38 )
 script = ExtResource( 7 )
 id = 10
@@ -136,7 +136,7 @@ id = 10
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D11" type="Area2D" parent="."]
+[node name="Area2D11" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -9466, 38 )
 script = ExtResource( 7 )
 id = 11
@@ -145,7 +145,7 @@ id = 11
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D12" type="Area2D" parent="."]
+[node name="Area2D12" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -7914, 22 )
 script = ExtResource( 7 )
 id = 12
@@ -154,7 +154,7 @@ id = 12
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D13" type="Area2D" parent="."]
+[node name="Area2D13" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -6530, 30 )
 script = ExtResource( 7 )
 id = 13
@@ -163,7 +163,7 @@ id = 13
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D14" type="Area2D" parent="."]
+[node name="Area2D14" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -5154, 22 )
 script = ExtResource( 7 )
 id = 14
@@ -172,7 +172,7 @@ id = 14
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D15" type="Area2D" parent="."]
+[node name="Area2D15" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -3746, 38 )
 script = ExtResource( 7 )
 id = 15
@@ -181,7 +181,7 @@ id = 15
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D16" type="Area2D" parent="."]
+[node name="Area2D16" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -2314, 70 )
 script = ExtResource( 7 )
 id = 16
@@ -190,7 +190,7 @@ id = 16
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D17" type="Area2D" parent="."]
+[node name="Area2D17" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( -890, 46 )
 script = ExtResource( 7 )
 id = 17
@@ -199,7 +199,7 @@ id = 17
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D18" type="Area2D" parent="."]
+[node name="Area2D18" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 537, 17 )
 script = ExtResource( 7 )
 id = 18
@@ -208,7 +208,7 @@ id = 18
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D19" type="Area2D" parent="."]
+[node name="Area2D19" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 2031, 46 )
 script = ExtResource( 7 )
 id = 19
@@ -217,7 +217,7 @@ id = 19
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D20" type="Area2D" parent="."]
+[node name="Area2D20" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 3591, 27 )
 script = ExtResource( 7 )
 id = 20
@@ -226,7 +226,7 @@ id = 20
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D21" type="Area2D" parent="."]
+[node name="Area2D21" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 5028, 17 )
 script = ExtResource( 7 )
 id = 21
@@ -235,7 +235,7 @@ id = 21
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D22" type="Area2D" parent="."]
+[node name="Area2D22" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 6322, 27 )
 script = ExtResource( 7 )
 id = 22
@@ -244,7 +244,7 @@ id = 22
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D23" type="Area2D" parent="."]
+[node name="Area2D23" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 7873, 27 )
 script = ExtResource( 7 )
 id = 23
@@ -253,7 +253,7 @@ id = 23
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D24" type="Area2D" parent="."]
+[node name="Area2D24" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 9357, 37 )
 script = ExtResource( 7 )
 id = 24
@@ -262,7 +262,7 @@ id = 24
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D25" type="Area2D" parent="."]
+[node name="Area2D25" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 10794, 37 )
 script = ExtResource( 7 )
 id = 25
@@ -271,7 +271,7 @@ id = 25
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D26" type="Area2D" parent="."]
+[node name="Area2D26" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 12326, 8 )
 script = ExtResource( 7 )
 id = 26
@@ -280,7 +280,7 @@ id = 26
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D27" type="Area2D" parent="."]
+[node name="Area2D27" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 13616, 28 )
 script = ExtResource( 7 )
 id = 27
@@ -289,7 +289,7 @@ id = 27
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D28" type="Area2D" parent="."]
+[node name="Area2D28" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 14997, 38 )
 script = ExtResource( 7 )
 id = 28
@@ -298,7 +298,7 @@ id = 28
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D29" type="Area2D" parent="."]
+[node name="Area2D29" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 16307, 48 )
 script = ExtResource( 7 )
 id = 29
@@ -307,7 +307,7 @@ id = 29
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D30" type="Area2D" parent="."]
+[node name="Area2D30" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 17607, 48 )
 script = ExtResource( 7 )
 id = 30
@@ -316,7 +316,7 @@ id = 30
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D31" type="Area2D" parent="."]
+[node name="Area2D31" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 19089, 38 )
 script = ExtResource( 7 )
 id = 31
@@ -325,7 +325,7 @@ id = 31
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D32" type="Area2D" parent="."]
+[node name="Area2D32" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 20460, 78 )
 script = ExtResource( 7 )
 id = 32
@@ -334,7 +334,7 @@ id = 32
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D33" type="Area2D" parent="."]
+[node name="Area2D33" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 21780, 68 )
 script = ExtResource( 7 )
 id = 33
@@ -343,7 +343,7 @@ id = 33
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D34" type="Area2D" parent="."]
+[node name="Area2D34" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 23221, 58 )
 script = ExtResource( 7 )
 id = 34
@@ -352,7 +352,7 @@ id = 34
 position = Vector2( 51, 0 )
 shape = SubResource( 1 )
 
-[node name="Area2D35" type="Area2D" parent="."]
+[node name="Area2D35" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 25094, 35 )
 script = ExtResource( 7 )
 id = 35
