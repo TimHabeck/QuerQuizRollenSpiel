@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Samurai-Nights-Demo.mp3-64385561ef090e243968c08ec39c545d.mp3str"
+
+[deps]
+
+source_file="res://Assets/audio/Samurai-Nights-Demo.mp3"
+dest_files=[ "res://.import/Samurai-Nights-Demo.mp3-64385561ef090e243968c08ec39c545d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/oga_japanese_hacks.mp3-759c14a8a521535dc1032da53e7b4484.mp3str"
+
+[deps]
+
+source_file="res://Assets/audio/oga_japanese_hacks.mp3"
+dest_files=[ "res://.import/oga_japanese_hacks.mp3-759c14a8a521535dc1032da53e7b4484.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
