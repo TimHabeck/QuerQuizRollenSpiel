@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/trak2_wall1c.tga" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 35, 33 )
+
+[sub_resource type="OccluderPolygon2D" id=10]
+polygon = PoolVector2Array( -36, -34, -36, 32, 34, 32, 34, -34 )
+
+[node name="plattform" type="StaticBody2D"]
+position = Vector2( -139, 647 )
+rotation = -3.14159
+scale = Vector2( 1.37679, -0.284358 )
+
+[node name="wall" type="Sprite" parent="."]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 1 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource( 10 )
