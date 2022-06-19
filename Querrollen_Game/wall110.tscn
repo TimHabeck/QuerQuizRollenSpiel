@@ -8,8 +8,9 @@ extents = Vector2( 35, 33 )
 [sub_resource type="OccluderPolygon2D" id=10]
 polygon = PoolVector2Array( -36, -34, -36, 32, 34, 32, 34, -34 )
 
-[node name="wall" type="StaticBody2D"]
-scale = Vector2( 1.5, 1.5 )
+[node name="wall110" type="StaticBody2D"]
+position = Vector2( -6119, 1367 )
+scale = Vector2( 2, 2 )
 
 [node name="wall" type="Sprite" parent="."]
 position = Vector2( -614.105, -34 )
