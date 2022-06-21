@@ -39,11 +39,14 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			velocity.y = jump_speed
+			$Sound_jump.play()
 
 func change_jump_speed(amount):
+	$Sound_pickup_jumpHigh.play()
 	jump_speed -= amount
 
 func change_light_size(amount):
+	$Sound_pickup_lightBright.play()
 	var light = find_node("PlayerLight")
 	var size = light.get_texture_scale()
 	light.set_texture_scale(size+amount)

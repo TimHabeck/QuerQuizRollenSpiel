@@ -420,6 +420,7 @@ anims/settings = SubResource( 9 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+volume_db = -35.0
 autoplay = true
 
 [connection signal="pressed" from="MainMenu/StartBtn" to="." method="_on_StartBtn_pressed"]
