@@ -1,6 +1,7 @@
 extends Node
 
 export var id:int
+export var description:String
 
 signal player_entered(area_id)
 
