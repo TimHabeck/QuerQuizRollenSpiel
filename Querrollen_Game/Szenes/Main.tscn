@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/character/samurai.png" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://Assets/audio/jump_10.wav" type="AudioStream" id=18]
 [ext_resource path="res://Assets/audio/wave2.wav" type="AudioStream" id=19]
 [ext_resource path="res://Assets/audio/wave.wav" type="AudioStream" id=20]
+[ext_resource path="res://Szenes/Enemy.tscn" type="PackedScene" id=21]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 2
@@ -143,6 +144,8 @@ volume_db = -30.0
 [node name="Sound_pickup_lightBright" type="AudioStreamPlayer" parent="KinematicBody2D"]
 stream = ExtResource( 20 )
 volume_db = -30.0
+
+[node name="enemy" parent="." instance=ExtResource( 21 )]
 
 [node name="devLight2D" type="Light2D" parent="."]
 position = Vector2( 27, 0 )
