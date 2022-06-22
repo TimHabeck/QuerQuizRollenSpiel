@@ -2,35 +2,28 @@ extends Node
 
 export (Array, Texture) var images
 
-var interface:Control
+onready var interface:Control = get_node("./KinematicBody2D/Interface")
 
-onready var targets = [
-	{"id":"1:1","img":images[0]},
-	{"id":"1:14","img":images[1]},
-	{"id":"2:2","img":images[2]},
-	{"id":"5:5","img":images[3]}
-	]
+var targets = []
 	
 var current_target:String
 
 func _ready():
 	randomize()
+	connect_scroll_signals()
+	start_task()
+
 	
-	for i in find_node("Background_Container").get_children():
-		i.connect("player_entered", self, "_player_found_something")
-		
-	interface = get_node("./KinematicBody2D/Interface")
-
-
+func start_task():
+	yield(get_tree().create_timer(0.2), "timeout")
 	var number = floor(rand_range(0, len(targets)))
 	new_task(targets[number])
 	targets.remove(number)
 	
-func _player_found_something(area_id):
-	if area_id == current_target:
-		var number = floor(rand_range(0, len(targets)))
-		new_task(targets[number])
-		targets.remove(number)
+func connect_scroll_signals():
+	for i in find_node("Background_Container").get_children():
+		i.connect("player_entered", self, "_player_found_something")
+		i.connect("target_registered", self, "_target_message")
 	
 func new_task(target):
 	var id = target["id"]
@@ -39,9 +32,16 @@ func new_task(target):
 	current_target = id
 	interface.new_texture(img)
 
-func test():
-	print("works")
-
 func timed_action(f : FuncRef, time, args=[]):
 	yield(get_tree().create_timer(float(time)), "timeout")
 	f.call_funcv(args)
+
+func _player_found_something(area_id):
+	if area_id == current_target:
+		var number = floor(rand_range(0, len(targets)))
+		new_task(targets[number])
+		targets.remove(number)
+	
+func _target_message(id, desc, img):
+	targets.append({"id":id, "desc":desc, "img":img})
+	
