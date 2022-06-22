@@ -2,6 +2,7 @@ extends Node
 
 export var id:int
 export var description:String
+export var thumbnail:Texture
 
 signal player_entered(area_id)
 

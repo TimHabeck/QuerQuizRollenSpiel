@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assets/target_thumbnails/target1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101610.png" type="Texture" id=1]
 [ext_resource path="res://Assets/ui/Parchment_roll.png" type="Texture" id=2]
 [ext_resource path="res://Assets/ui/font_DacianDonarium.ttf" type="DynamicFontData" id=3]
 
