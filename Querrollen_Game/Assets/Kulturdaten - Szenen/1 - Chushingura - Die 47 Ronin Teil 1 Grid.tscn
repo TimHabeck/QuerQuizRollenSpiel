@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Assets/Kulturdaten/Chushingura - Die 47 Ronin Teil 1/Chushingura - Die 47 Ronin Teil 1 2.jpg" type="Texture" id=1]
 [ext_resource path="res://Assets/Kulturdaten/Chushingura - Die 47 Ronin Teil 1/Chushingura - Die 47 Ronin Teil 1 4.jpg" type="Texture" id=2]
@@ -7,9 +7,29 @@
 [ext_resource path="res://Assets/Kulturdaten/Chushingura - Die 47 Ronin Teil 1/Chushingura - Die 47 Ronin Teil 1 5.jpg" type="Texture" id=5]
 [ext_resource path="res://Scripts/target.gd" type="Script" id=6]
 [ext_resource path="res://Scripts/Scroll_Manager.gd" type="Script" id=7]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103134.png" type="Texture" id=8]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103434.png" type="Texture" id=9]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103351.png" type="Texture" id=10]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103418.png" type="Texture" id=11]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103326.png" type="Texture" id=12]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103338.png" type="Texture" id=13]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103446.png" type="Texture" id=14]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103405.png" type="Texture" id=15]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103249.png" type="Texture" id=16]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103209.png" type="Texture" id=17]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103232.png" type="Texture" id=18]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 2/Screenshot 2022-06-22 103307.png" type="Texture" id=19]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 491.407
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 466.0
+height = 2156.0
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 441.0
+height = 1592.0
 
 [node name="Chushingura - Die 47 Ronin Teil 1 Grid" type="Node2D"]
 use_parent_material = true
@@ -22,6 +42,8 @@ collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 1
+description = "Eine Andacht für einen enthaupteten Beamten"
+thumbnail = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
@@ -32,198 +54,132 @@ collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 2
+description = "Ein Grab auf dem der Kopf dessen liegt, der der für den Tod des begrabenen verantwortlich war"
+thumbnail = ExtResource( 17 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 shape = SubResource( 1 )
 
 [node name="Area2D3" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -15920, -5 )
+position = Vector2( -14360, 3 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 3
+description = "Der Rat eines Adeligen"
+thumbnail = ExtResource( 18 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 shape = SubResource( 1 )
 
 [node name="Area2D4" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -14360, 3 )
+position = Vector2( -8297, 7 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 4
+description = "Siegreiche Samurai erreichen einen Tempel"
+thumbnail = ExtResource( 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
-shape = SubResource( 1 )
+rotation = 1.5708
+shape = SubResource( 2 )
 
 [node name="Area2D5" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -12707, -1 )
+position = Vector2( -4598, 20 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 5
+description = "Siegreiche Samurai werden gefeiert und bewirtet"
+thumbnail = ExtResource( 19 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
-shape = SubResource( 1 )
+rotation = 1.5708
+shape = SubResource( 3 )
 
 [node name="Area2D6" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -11067, -9 )
+position = Vector2( 1741, 18 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 6
+description = "Vier Männer verstecken sich vor Angreifern in einem Schuppen"
+thumbnail = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
 shape = SubResource( 1 )
 
 [node name="Area2D7" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -9393, -17 )
+position = Vector2( 5254, -7 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 7
+description = "Samurai durchsuchen das Anwesen eines Feindes"
+thumbnail = ExtResource( 13 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7"]
 shape = SubResource( 1 )
 
 [node name="Area2D8" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -7863, 4 )
+position = Vector2( 7162, 5 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 8
+description = "Ein Kampf zwischen Samurai"
+thumbnail = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
 shape = SubResource( 1 )
 
 [node name="Area2D9" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -5268, 17 )
+position = Vector2( 8986, 13 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 9
+description = "Samurai greifen einen Feind. Ein anderer versucht zu fliehen."
+thumbnail = ExtResource( 15 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9"]
 shape = SubResource( 1 )
 
 [node name="Area2D10" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -3585, 52 )
+position = Vector2( 10844, -1 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 10
+description = "Ein Bogenschütze positioniert sich auf einem Dach, während sein Gefährte einen Wachmann fesselt"
+thumbnail = ExtResource( 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10"]
 shape = SubResource( 1 )
 
 [node name="Area2D11" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -1887, 14 )
+position = Vector2( 15057, -23 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
 id = 11
+description = "Ein Zug bewaffneter Samurai auf einer Brücke"
+thumbnail = ExtResource( 9 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11"]
 shape = SubResource( 1 )
 
 [node name="Area2D12" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 69, 14 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 12
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12"]
-shape = SubResource( 1 )
-
-[node name="Area2D13" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 1741, 18 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 13
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D13"]
-shape = SubResource( 1 )
-
-[node name="Area2D14" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 3475, 18 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 14
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D14"]
-shape = SubResource( 1 )
-
-[node name="Area2D15" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 5254, -7 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 15
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D15"]
-shape = SubResource( 1 )
-
-[node name="Area2D16" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 7162, 5 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 16
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D16"]
-shape = SubResource( 1 )
-
-[node name="Area2D17" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 8986, 13 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 17
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D17"]
-shape = SubResource( 1 )
-
-[node name="Area2D18" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 10844, -1 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 18
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D18"]
-shape = SubResource( 1 )
-
-[node name="Area2D19" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 12686, -12 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 19
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D19"]
-shape = SubResource( 1 )
-
-[node name="Area2D20" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 15057, -23 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 6 )
-id = 20
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D20"]
-shape = SubResource( 1 )
-
-[node name="Area2D21" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 18024, -3 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 6 )
-id = 21
+id = 12
+description = "Samurai bereiten sich auf einen Angriff vor"
+thumbnail = ExtResource( 14 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D21"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12"]
 shape = SubResource( 1 )
 
 [node name="Chushingura-Die47RoninTeil11" type="Sprite" parent="."]
@@ -268,12 +224,3 @@ texture = ExtResource( 5 )
 [connection signal="body_entered" from="Area2D10" to="Area2D10" method="_on_player_entered"]
 [connection signal="body_entered" from="Area2D11" to="Area2D11" method="_on_player_entered"]
 [connection signal="body_entered" from="Area2D12" to="Area2D12" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D13" to="Area2D13" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D14" to="Area2D14" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D15" to="Area2D15" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D16" to="Area2D16" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D17" to="Area2D17" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D18" to="Area2D18" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D19" to="Area2D19" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D20" to="Area2D20" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D21" to="Area2D21" method="_on_player_entered"]
