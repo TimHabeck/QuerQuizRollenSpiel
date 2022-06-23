@@ -70,6 +70,7 @@ extents = Vector2( 35, 33 )
 polygon = PoolVector2Array( -36, -34, -36, 32, 34, 32, 34, -34 )
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( 0, 5 )
 script = ExtResource( 7 )
 
 [node name="Background_Container" type="Node" parent="."]
@@ -8727,7 +8728,7 @@ occluder = SubResource( 10 )
 [node name="wall1" type="Node2D" parent="vertical_walls"]
 
 [node name="wall270" type="StaticBody2D" parent="vertical_walls/wall1"]
-position = Vector2( -8722, -24 )
+position = Vector2( -8723, -55 )
 scale = Vector2( 2, 2 )
 
 [node name="wall" type="Sprite" parent="vertical_walls/wall1/wall270"]
@@ -8744,7 +8745,7 @@ shape = SubResource( 6 )
 occluder = SubResource( 10 )
 
 [node name="wall271" type="StaticBody2D" parent="vertical_walls/wall1"]
-position = Vector2( -8722, 103 )
+position = Vector2( -8723, 33 )
 scale = Vector2( 2, 2 )
 
 [node name="wall" type="Sprite" parent="vertical_walls/wall1/wall271"]
@@ -8778,7 +8779,7 @@ shape = SubResource( 6 )
 occluder = SubResource( 10 )
 
 [node name="wall272" type="StaticBody2D" parent="vertical_walls/wall1"]
-position = Vector2( -8722, -154 )
+position = Vector2( -8723, -183 )
 scale = Vector2( 2, 2 )
 
 [node name="wall" type="Sprite" parent="vertical_walls/wall1/wall272"]
