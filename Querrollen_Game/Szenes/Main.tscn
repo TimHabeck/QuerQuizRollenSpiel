@@ -9331,7 +9331,7 @@ shape = SubResource( 6 )
 occluder = SubResource( 10 )
 
 [node name="plattform18" type="StaticBody2D" parent="plattforms"]
-position = Vector2( -1317, 319 )
+position = Vector2( -1317, 318 )
 rotation = -3.14159
 scale = Vector2( 1.37679, -0.284358 )
 

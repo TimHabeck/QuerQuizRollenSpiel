@@ -6,30 +6,24 @@ onready var interface:Control = get_node("./KinematicBody2D/Interface")
 
 var targets = []
 	
-var current_target:String
+var current_target:float
 
 func _ready():
 	randomize()
 	connect_scroll_signals()
-	start_task()
-
-	
-func start_task():
 	yield(get_tree().create_timer(0.2), "timeout")
-	var number = floor(rand_range(0, len(targets)))
-	new_task(targets[number])
-	targets.remove(number)
+	new_task()
 	
 func connect_scroll_signals():
 	for i in find_node("Background_Container").get_children():
 		i.connect("player_entered", self, "_player_found_something")
 		i.connect("target_registered", self, "_target_message")
 	
-func new_task(target):
-	var id = target["id"]
-	var img = target["img"]
+func new_task():
+	var number = floor(rand_range(0, len(targets)))
+	current_target = number
 	
-	current_target = id
+	var img = targets[number]["img"]
 	interface.new_texture(img)
 
 func timed_action(f : FuncRef, time, args=[]):
@@ -37,11 +31,13 @@ func timed_action(f : FuncRef, time, args=[]):
 	f.call_funcv(args)
 
 func _player_found_something(area_id):
-	if area_id == current_target:
-		var number = floor(rand_range(0, len(targets)))
-		new_task(targets[number])
-		targets.remove(number)
+	if area_id == targets[current_target]["id"]:
+		var desc = targets[current_target]["desc"]
+		interface. description(desc)
+		targets.remove(current_target)
+		new_task()
 	
 func _target_message(id, desc, img):
-	targets.append({"id":id, "desc":desc, "img":img})
+	if img:
+		targets.append({"id":id, "desc":desc, "img":img})
 	
