@@ -1,8 +1,8 @@
 extends Node
 
 signal light_item_found()
-const effect = 5
-const duration = 60
+const effect = 3
+const duration = 15
 
 func _ready():
 	connect("light_item_found", owner, "timed_action")

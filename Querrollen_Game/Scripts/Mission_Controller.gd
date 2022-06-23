@@ -26,7 +26,7 @@ func new_task():
 	var img = targets[number]["img"]
 	interface.new_texture(img)
 
-func timed_action(f : FuncRef, time, args=[]):
+func timed_action(f : FuncRef, time, args=[]): #Used for items. This function can reverse effects after the item has been deleted
 	yield(get_tree().create_timer(float(time)), "timeout")
 	f.call_funcv(args)
 
