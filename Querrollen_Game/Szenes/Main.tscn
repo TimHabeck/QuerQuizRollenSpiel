@@ -9728,8 +9728,26 @@ occluder = SubResource( 10 )
 [node name="Light_Item" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1052, 32 )
 
+[node name="Light_Item2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1555, 1061 )
+
+[node name="Light_Item3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 4726, 520 )
+
+[node name="Light_Item4" parent="." instance=ExtResource( 15 )]
+position = Vector2( 7432, 1041 )
+
+[node name="Light_Item5" parent="." instance=ExtResource( 15 )]
+position = Vector2( -7924, 536 )
+
 [node name="Jump_Item" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1628, 36 )
+position = Vector2( -3692, 1035 )
+
+[node name="Jump_Item2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 6705, 514 )
+
+[node name="Jump_Item3" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1966, 543 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 17 )
