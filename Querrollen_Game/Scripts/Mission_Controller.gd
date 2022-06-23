@@ -41,3 +41,8 @@ func _target_message(id, desc, img):
 	if img:
 		targets.append({"id":id, "desc":desc, "img":img})
 	
+func _light_on():
+	interface._light_on()
+	
+func _jump_on():
+	interface._jump_on()
