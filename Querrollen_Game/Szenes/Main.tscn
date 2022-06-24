@@ -6,7 +6,6 @@
 [ext_resource path="res://Assets/Kulturdaten - Szenen/2 - Chushingura - Die 47 Ronin Teil 2 Grid.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/trak2_wall1c.tga" type="Texture" id=5]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/1 - Chushingura - Die 47 Ronin Teil 1 Grid.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scripts/enemy_spawner.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/5 - Moko Shurai - Ekotoba Grid.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Szenes/Interface.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Szenes/Enemy.tscn" type="PackedScene" id=10]
@@ -17,6 +16,7 @@
 [ext_resource path="res://Assets/audio/jump_10.wav" type="AudioStream" id=18]
 [ext_resource path="res://Assets/audio/wave2.wav" type="AudioStream" id=19]
 [ext_resource path="res://Assets/audio/wave.wav" type="AudioStream" id=20]
+[ext_resource path="res://Scripts/Mission_Controller.gd" type="Script" id=22]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 2
@@ -104,7 +104,7 @@ polygon = PoolVector2Array( -36, -34, -36, 32, 34, 32, 34, -34 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 5 )
-script = ExtResource( 7 )
+script = ExtResource( 22 )
 
 [node name="Background_Container" type="Node" parent="."]
 
@@ -157,6 +157,7 @@ current = true
 position = Vector2( 0, 0.5 )
 texture = ExtResource( 3 )
 texture_scale = 1.5
+mode = 2
 shadow_enabled = true
 
 [node name="Interface" parent="KinematicBody2D" instance=ExtResource( 9 )]
@@ -181,9 +182,6 @@ volume_db = -30.0
 [node name="Timer" type="Timer" parent="KinematicBody2D"]
 wait_time = 3.0
 one_shot = true
-
-[node name="enemy_spawner" type="Node" parent="."]
-script = ExtResource( 7 )
 
 [node name="devLight2D" type="Light2D" parent="."]
 position = Vector2( 27, 0 )
@@ -9980,30 +9978,6 @@ shape = SubResource( 6 )
 [node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform16"]
 occluder = SubResource( 10 )
 
-[node name="Light_Item" parent="." instance=ExtResource( 15 )]
-position = Vector2( 1052, 32 )
-
-[node name="Light_Item2" parent="." instance=ExtResource( 15 )]
-position = Vector2( 1555, 1061 )
-
-[node name="Light_Item3" parent="." instance=ExtResource( 15 )]
-position = Vector2( 4726, 520 )
-
-[node name="Light_Item4" parent="." instance=ExtResource( 15 )]
-position = Vector2( 7432, 1041 )
-
-[node name="Light_Item5" parent="." instance=ExtResource( 15 )]
-position = Vector2( -7924, 536 )
-
-[node name="Jump_Item" parent="." instance=ExtResource( 16 )]
-position = Vector2( -3692, 1035 )
-
-[node name="Jump_Item2" parent="." instance=ExtResource( 16 )]
-position = Vector2( 6705, 514 )
-
-[node name="Jump_Item3" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1966, 543 )
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 17 )
 volume_db = -35.0
@@ -10029,5 +10003,33 @@ position = Vector2( 9500, 550 )
 
 [node name="enemy7" parent="." instance=ExtResource( 10 )]
 position = Vector2( 5500, 1100 )
+
+[node name="Light_Items" type="Node2D" parent="."]
+
+[node name="Light_Item" parent="Light_Items" instance=ExtResource( 15 )]
+position = Vector2( 1052, 32 )
+
+[node name="Light_Item2" parent="Light_Items" instance=ExtResource( 15 )]
+position = Vector2( 1555, 1061 )
+
+[node name="Light_Item3" parent="Light_Items" instance=ExtResource( 15 )]
+position = Vector2( 4726, 520 )
+
+[node name="Light_Item4" parent="Light_Items" instance=ExtResource( 15 )]
+position = Vector2( 7432, 1041 )
+
+[node name="Light_Item5" parent="Light_Items" instance=ExtResource( 15 )]
+position = Vector2( -7924, 536 )
+
+[node name="Jump_Items" type="Node2D" parent="."]
+
+[node name="Jump_Item" parent="Jump_Items" instance=ExtResource( 16 )]
+position = Vector2( -3692, 1035 )
+
+[node name="Jump_Item2" parent="Jump_Items" instance=ExtResource( 16 )]
+position = Vector2( 6705, 514 )
+
+[node name="Jump_Item3" parent="Jump_Items" instance=ExtResource( 16 )]
+position = Vector2( 1966, 543 )
 
 [connection signal="timeout" from="KinematicBody2D/Timer" to="KinematicBody2D" method="_on_Timer_timeout"]

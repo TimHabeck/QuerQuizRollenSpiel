@@ -57,10 +57,12 @@ func description(text:String):
 	counting=true
 	
 func _light_on():
+	print("light on")
 	light_countdown += 15
 	light_on = true
 	
 func _jump_on():
+	print("jump on")
 	jump_countdown += 15
 	jump_on = true
 	
