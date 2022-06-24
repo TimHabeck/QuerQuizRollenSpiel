@@ -1,0 +1,79 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/character/samurai.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/enemy.gd" type="Script" id=2]
+[ext_resource path="res://Assets/light.png" type="Texture" id=3]
+
+[sub_resource type="CanvasItemMaterial" id=15]
+light_mode = 2
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 13, 34.5 )
+
+[sub_resource type="Animation" id=13]
+resource_name = "Idle"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame_coords:x")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 0.6, 1.5, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 4.0, 5.0, 4.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "Walking"
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame_coords:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 2.0, 1.0, 0.0, 2.0 ]
+}
+
+[node name="enemy" type="KinematicBody2D" groups=["enemy"]]
+material = SubResource( 15 )
+position = Vector2( -111, -11 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3, -14 )
+shape = SubResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="."]
+use_parent_material = true
+position = Vector2( -3.17201, -13.114 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+hframes = 6
+vframes = 10
+frame = 18
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Idle = SubResource( 13 )
+anims/Walking = SubResource( 14 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( -39, -23 )
+enabled = true
+
+[node name="devLight2D" type="Light2D" parent="."]
+position = Vector2( 27, 0 )
+editor_only = true
+texture = ExtResource( 3 )
+texture_scale = 10.0
+energy = 0.7

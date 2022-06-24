@@ -119,6 +119,7 @@ current = true
 [node name="PlayerLight" type="Light2D" parent="KinematicBody2D"]
 position = Vector2( 0, 0.5 )
 texture = ExtResource( 3 )
+texture_scale = 1.5
 shadow_enabled = true
 
 [node name="Interface" parent="KinematicBody2D" instance=ExtResource( 9 )]
@@ -9258,6 +9259,76 @@ shape = SubResource( 6 )
 [node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform20"]
 occluder = SubResource( 10 )
 
+[node name="plattform41" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 4864, 555 )
+scale = Vector2( -1.37679, 0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform41"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform41"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform41"]
+occluder = SubResource( 10 )
+
+[node name="plattform42" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 4718, 379 )
+rotation = -3.14159
+scale = Vector2( 1.37679, -0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform42"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform42"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform42"]
+occluder = SubResource( 10 )
+
+[node name="plattform43" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 6407, 570 )
+scale = Vector2( -1.37679, 0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform43"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform43"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform43"]
+occluder = SubResource( 10 )
+
+[node name="plattform44" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 6261, 394 )
+rotation = -3.14159
+scale = Vector2( 1.37679, -0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform44"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform44"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform44"]
+occluder = SubResource( 10 )
+
 [node name="plattform4" type="StaticBody2D" parent="plattforms"]
 position = Vector2( -152, 1106 )
 scale = Vector2( -1.37679, 0.284358 )
@@ -9291,6 +9362,146 @@ position = Vector2( -1, -1 )
 shape = SubResource( 6 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform5"]
+occluder = SubResource( 10 )
+
+[node name="plattform33" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 4199, 1092 )
+scale = Vector2( -1.37679, 0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform33"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform33"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform33"]
+occluder = SubResource( 10 )
+
+[node name="plattform34" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 4035, 896 )
+rotation = -3.14159
+scale = Vector2( 1.37679, -0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform34"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform34"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform34"]
+occluder = SubResource( 10 )
+
+[node name="plattform35" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 6996, 1111 )
+scale = Vector2( -1.37679, 0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform35"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform35"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform35"]
+occluder = SubResource( 10 )
+
+[node name="plattform36" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 6832, 915 )
+rotation = -3.14159
+scale = Vector2( 1.37679, -0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform36"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform36"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform36"]
+occluder = SubResource( 10 )
+
+[node name="plattform37" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 8470, 1107 )
+scale = Vector2( -1.37679, 0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform37"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform37"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform37"]
+occluder = SubResource( 10 )
+
+[node name="plattform38" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 8306, 911 )
+rotation = -3.14159
+scale = Vector2( 1.37679, -0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform38"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform38"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform38"]
+occluder = SubResource( 10 )
+
+[node name="plattform39" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 10011, 1083 )
+scale = Vector2( -1.37679, 0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform39"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform39"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform39"]
+occluder = SubResource( 10 )
+
+[node name="plattform40" type="StaticBody2D" parent="plattforms"]
+position = Vector2( 9847, 887 )
+rotation = -3.14159
+scale = Vector2( 1.37679, -0.284358 )
+
+[node name="wall" type="Sprite" parent="plattforms/plattform40"]
+position = Vector2( -614.105, -34 )
+scale = Vector2( 0.273438, 0.257813 )
+texture = ExtResource( 5 )
+offset = Vector2( 2242.21, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plattforms/plattform40"]
+position = Vector2( -1, -1 )
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="plattforms/plattform40"]
 occluder = SubResource( 10 )
 
 [node name="plattform6" type="StaticBody2D" parent="plattforms"]
