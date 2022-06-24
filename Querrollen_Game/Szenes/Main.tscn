@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/character/samurai.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scripts/enemy_spawner.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/5 - Moko Shurai - Ekotoba Grid.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Szenes/Interface.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Szenes/Enemy.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scripts/interface.gd" type="Script" id=14]
 [ext_resource path="res://Szenes/Light_Item.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Szenes/Jump_Item.tscn" type="PackedScene" id=16]
@@ -16,7 +17,6 @@
 [ext_resource path="res://Assets/audio/jump_10.wav" type="AudioStream" id=18]
 [ext_resource path="res://Assets/audio/wave2.wav" type="AudioStream" id=19]
 [ext_resource path="res://Assets/audio/wave.wav" type="AudioStream" id=20]
-[ext_resource path="res://Scripts/Mission_Controller.gd" type="Script" id=22]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 2
@@ -9799,5 +9799,26 @@ position = Vector2( 1966, 543 )
 stream = ExtResource( 17 )
 volume_db = -35.0
 autoplay = true
+
+[node name="enemy" parent="." instance=ExtResource( 10 )]
+position = Vector2( -2800, 32 )
+
+[node name="enemy2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1000, 32 )
+
+[node name="enemy3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 7500, 32 )
+
+[node name="enemy4" parent="." instance=ExtResource( 10 )]
+position = Vector2( -3200, 550 )
+
+[node name="enemy5" parent="." instance=ExtResource( 10 )]
+position = Vector2( 3800, 550 )
+
+[node name="enemy6" parent="." instance=ExtResource( 10 )]
+position = Vector2( 9500, 550 )
+
+[node name="enemy7" parent="." instance=ExtResource( 10 )]
+position = Vector2( 5500, 1100 )
 
 [connection signal="timeout" from="KinematicBody2D/Timer" to="KinematicBody2D" method="_on_Timer_timeout"]
