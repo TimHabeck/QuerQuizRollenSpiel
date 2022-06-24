@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export (int) var speed = 200
+export (int) var speed = 120
 export (int) var gravity = 3000
 
 var velocity = Vector2.ZERO
@@ -14,6 +14,13 @@ func _ready():
 func _physics_process(delta): 
 	move_enemy(delta)
 	detect_turn_around()
+	detect_collision()
+
+func detect_collision():
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("player"):
+			collision.collider.player_dies()
 	
 func move_enemy(delta):
 	# gravity

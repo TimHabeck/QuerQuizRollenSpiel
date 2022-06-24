@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/character/samurai.png" type="Texture" id=2]
@@ -6,13 +6,13 @@
 [ext_resource path="res://Assets/Kulturdaten - Szenen/2 - Chushingura - Die 47 Ronin Teil 2 Grid.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/trak2_wall1c.tga" type="Texture" id=5]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/1 - Chushingura - Die 47 Ronin Teil 1 Grid.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scripts/Mission_Controller.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/enemy_spawner.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/5 - Moko Shurai - Ekotoba Grid.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Szenes/Interface.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Assets/ui/target_thumbnails/target 2.png" type="Texture" id=10]
-[ext_resource path="res://Assets/ui/target_thumbnails/target 3.png" type="Texture" id=11]
-[ext_resource path="res://Assets/ui/target_thumbnails/target 4.png" type="Texture" id=12]
-[ext_resource path="res://Assets/ui/target_thumbnails/target1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/target_thumbnails/target1.png" type="Texture" id=10]
+[ext_resource path="res://Assets/target_thumbnails/target 2.png" type="Texture" id=11]
+[ext_resource path="res://Assets/target_thumbnails/target 3.png" type="Texture" id=12]
+[ext_resource path="res://Assets/target_thumbnails/target 4.png" type="Texture" id=13]
 [ext_resource path="res://Scripts/interface.gd" type="Script" id=14]
 [ext_resource path="res://Szenes/Light_Item.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Szenes/Jump_Item.tscn" type="PackedScene" id=16]
@@ -20,7 +20,7 @@
 [ext_resource path="res://Assets/audio/jump_10.wav" type="AudioStream" id=18]
 [ext_resource path="res://Assets/audio/wave2.wav" type="AudioStream" id=19]
 [ext_resource path="res://Assets/audio/wave.wav" type="AudioStream" id=20]
-[ext_resource path="res://Szenes/Enemy.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Scripts/Mission_Controller.gd" type="Script" id=22]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 2
@@ -33,6 +33,23 @@ light_mode = 2
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 13, 34.5 )
+
+[sub_resource type="Animation" id=13]
+resource_name = "Die"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 30, 31, 32 ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle"
@@ -49,6 +66,21 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, 4.0, 5.0, 4.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 30 ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -75,8 +107,8 @@ extents = Vector2( 35, 33 )
 polygon = PoolVector2Array( -36, -34, -36, 32, 34, 32, 34, -34 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 7 )
-images = [ ExtResource( 13 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ]
+script = ExtResource( 22 )
+images = [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ]
 
 [node name="Background_Container" type="Node" parent="."]
 
@@ -96,7 +128,8 @@ material = SubResource( 11 )
 position = Vector2( 69, 1069 )
 scale = Vector2( 0.4, 0.4 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=["player"]]
+position = Vector2( -1, 0 )
 scale = Vector2( 2, 2 )
 collision_layer = 3
 script = ExtResource( 1 )
@@ -112,9 +145,12 @@ scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 2 )
 hframes = 6
 vframes = 10
+frame = 30
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="KinematicBody2D"]
+anims/Die = SubResource( 13 )
 anims/Idle = SubResource( 2 )
+anims/RESET = SubResource( 14 )
 anims/Walking = SubResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
@@ -124,6 +160,8 @@ current = true
 [node name="PlayerLight" type="Light2D" parent="KinematicBody2D"]
 position = Vector2( 0, 0.5 )
 texture = ExtResource( 3 )
+texture_scale = 1.5
+mode = 2
 shadow_enabled = true
 
 [node name="Interface" parent="KinematicBody2D" instance=ExtResource( 9 )]
@@ -145,7 +183,12 @@ volume_db = -30.0
 stream = ExtResource( 20 )
 volume_db = -30.0
 
-[node name="enemy" parent="." instance=ExtResource( 21 )]
+[node name="Timer" type="Timer" parent="KinematicBody2D"]
+wait_time = 3.0
+one_shot = true
+
+[node name="enemy_spawner" type="Node" parent="."]
+script = ExtResource( 7 )
 
 [node name="devLight2D" type="Light2D" parent="."]
 position = Vector2( 27, 0 )
@@ -9742,3 +9785,5 @@ position = Vector2( 1628, 36 )
 stream = ExtResource( 17 )
 volume_db = -35.0
 autoplay = true
+
+[connection signal="timeout" from="KinematicBody2D/Timer" to="KinematicBody2D" method="_on_Timer_timeout"]
