@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Assets/Kulturdaten/Chushingura - Die 47 Ronin Teil 2/Chushingura - Die 47 Ronin Teil 2 6.jpg" type="Texture" id=1]
 [ext_resource path="res://Assets/Kulturdaten/Chushingura - Die 47 Ronin Teil 2/Chushingura - Die 47 Ronin Teil 2 5.jpg" type="Texture" id=2]
@@ -8,9 +8,37 @@
 [ext_resource path="res://Assets/Kulturdaten/Chushingura - Die 47 Ronin Teil 2/Chushingura - Die 47 Ronin Teil 2 4.jpg" type="Texture" id=6]
 [ext_resource path="res://Scripts/target.gd" type="Script" id=7]
 [ext_resource path="res://Scripts/Scroll_Manager.gd" type="Script" id=8]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101641.png" type="Texture" id=9]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101721.png" type="Texture" id=10]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101610.png" type="Texture" id=11]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101744.png" type="Texture" id=12]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101802.png" type="Texture" id=13]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101819.png" type="Texture" id=14]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/target1.png" type="Texture" id=15]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 102003.png" type="Texture" id=16]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101837.png" type="Texture" id=17]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101705.png" type="Texture" id=18]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101943.png" type="Texture" id=19]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101855.png" type="Texture" id=20]
+[ext_resource path="res://Assets/target_thumbnails/Chushingura 1/Screenshot 2022-06-22 101918.png" type="Texture" id=21]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 500.196
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 410.0
+height = 1738.0
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 458.0
+height = 1392.0
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 276.007
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 492.0
+height = 1810.0
 
 [node name="Chushingura - Die 47 Ronin Teil 2 Grid" type="Node2D"]
 use_parent_material = true
@@ -59,258 +87,163 @@ collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
 id = 1
+description = "Der Beamte Kira in seiner Sänfte"
+thumbnail = ExtResource( 15 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
 
 [node name="Area2D2" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -23968, 27 )
+position = Vector2( -22261, 14 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
 id = 2
+description = "Verkleidete Samurai besprechen sich mit ihrem Anführer"
+thumbnail = ExtResource( 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 shape = SubResource( 1 )
 
 [node name="Area2D3" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -22261, 14 )
+position = Vector2( -17913, 21 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
 id = 3
+description = "Einige Samurai haben sich als Handwerker verkleidet, um nicht aufzufallen"
+thumbnail = ExtResource( 9 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 shape = SubResource( 1 )
 
 [node name="Area2D4" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -20603, 24 )
+position = Vector2( -10945, 0 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
 id = 4
+description = "Eine Gruppe Samurai plant die Rache für ihren verstorenen Herrn"
+thumbnail = ExtResource( 18 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
 shape = SubResource( 1 )
 
 [node name="Area2D5" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -19370, 24 )
+position = Vector2( -6115, -23 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
 id = 5
+description = "Frauen trauern über den Tod eines Familienmitgliedes"
+thumbnail = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
 shape = SubResource( 1 )
 
 [node name="Area2D6" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -17913, 21 )
+position = Vector2( -4154, -25 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
 id = 6
+description = "Ein unmittelbar bevorstehender ritueler Selbstmord \"Seppuku\" "
+thumbnail = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2( 57, 5 )
 shape = SubResource( 1 )
 
 [node name="Area2D7" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -16329, 5 )
+position = Vector2( -2222, -21 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
 id = 7
+description = "Die Tafel verkündet eine Verurteilung"
+thumbnail = ExtResource( 13 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7"]
 shape = SubResource( 1 )
 
 [node name="Area2D8" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -14444, -30 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 8
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
-shape = SubResource( 1 )
-
-[node name="Area2D9" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -12841, -26 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 9
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9"]
-shape = SubResource( 1 )
-
-[node name="Area2D10" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -10945, -2 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 10
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10"]
-shape = SubResource( 1 )
-
-[node name="Area2D11" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -8828, -32 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 11
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11"]
-shape = SubResource( 1 )
-
-[node name="Area2D12" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -6028, -46 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 12
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12"]
-shape = SubResource( 1 )
-
-[node name="Area2D13" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -4154, -25 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 13
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D13"]
-shape = SubResource( 1 )
-
-[node name="Area2D14" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -2222, -21 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 14
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D14"]
-shape = SubResource( 1 )
-
-[node name="Area2D15" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( -599, -17 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 15
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D15"]
-shape = SubResource( 1 )
-
-[node name="Area2D16" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 1047, -58 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
-id = 16
+id = 8
+description = "Ein gescheiterter Angriff des Daimyos Asano auf einen kaiserlichen Beamten"
+thumbnail = ExtResource( 14 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D16"]
-shape = SubResource( 1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
+position = Vector2( 884, 40 )
+rotation = 1.5708
+shape = SubResource( 2 )
 
-[node name="Area2D17" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 5130, -116 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 17
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D17"]
-shape = SubResource( 1 )
-
-[node name="Area2D18" type="Area2D" parent="." groups=["Areas"]]
+[node name="Area2D9" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 6989, 21 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
-id = 18
+id = 9
+description = "Diener empfangen vor dem Haus einen eintreffende Gäste"
+thumbnail = ExtResource( 17 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D18"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9"]
+position = Vector2( -379, -39 )
 shape = SubResource( 1 )
 
-[node name="Area2D19" type="Area2D" parent="." groups=["Areas"]]
+[node name="Area2D10" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 10502, -11 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
-id = 19
+id = 10
+description = "Diener tragen Gepäck, ein Adeliger reist in in einer Sänfte"
+thumbnail = ExtResource( 20 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D19"]
-shape = SubResource( 1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10"]
+position = Vector2( -1199, -28 )
+rotation = 1.5708
+shape = SubResource( 3 )
 
-[node name="Area2D20" type="Area2D" parent="." groups=["Areas"]]
+[node name="Area2D11" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 12254, -39 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
-id = 20
+id = 11
+description = "Die Zwei gekreuzten Federn sind das Wappen des Asano-Clans"
+thumbnail = ExtResource( 21 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D20"]
-shape = SubResource( 1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11"]
+position = Vector2( 620, 247 )
+shape = SubResource( 4 )
 
-[node name="Area2D21" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 14081, -62 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 21
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D21"]
-shape = SubResource( 1 )
-
-[node name="Area2D22" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 16034, -62 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 22
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D22"]
-shape = SubResource( 1 )
-
-[node name="Area2D23" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 17834, -75 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 23
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D23"]
-shape = SubResource( 1 )
-
-[node name="Area2D24" type="Area2D" parent="." groups=["Areas"]]
+[node name="Area2D12" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 20107, -70 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
-id = 24
+id = 12
+description = "Ein Adeliger reist mit seiner Gefolgschaft zum Hof des Kaisers"
+thumbnail = ExtResource( 19 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D24"]
-shape = SubResource( 1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12"]
+position = Vector2( -1153, 15 )
+rotation = 1.5708
+shape = SubResource( 5 )
 
-[node name="Area2D25" type="Area2D" parent="." groups=["Areas"]]
-position = Vector2( 22210, -47 )
-collision_layer = 0
-collision_mask = 2
-script = ExtResource( 7 )
-id = 25
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D25"]
-shape = SubResource( 1 )
-
-[node name="Area2D26" type="Area2D" parent="." groups=["Areas"]]
+[node name="Area2D13" type="Area2D" parent="." groups=["Areas"]]
 position = Vector2( 24388, -58 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 7 )
-id = 26
+id = 13
+description = "Diener treffen Vorbereitung für eine Reise"
+thumbnail = ExtResource( 16 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D26"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D13"]
 shape = SubResource( 1 )
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_player_entered"]
@@ -326,16 +259,3 @@ shape = SubResource( 1 )
 [connection signal="body_entered" from="Area2D11" to="Area2D11" method="_on_player_entered"]
 [connection signal="body_entered" from="Area2D12" to="Area2D12" method="_on_player_entered"]
 [connection signal="body_entered" from="Area2D13" to="Area2D13" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D14" to="Area2D14" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D15" to="Area2D15" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D16" to="Area2D16" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D17" to="Area2D17" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D18" to="Area2D18" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D19" to="Area2D19" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D20" to="Area2D20" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D21" to="Area2D21" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D22" to="Area2D22" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D23" to="Area2D23" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D24" to="Area2D24" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D25" to="Area2D25" method="_on_player_entered"]
-[connection signal="body_entered" from="Area2D26" to="Area2D26" method="_on_player_entered"]

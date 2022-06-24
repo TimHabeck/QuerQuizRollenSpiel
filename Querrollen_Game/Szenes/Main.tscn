@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/character/samurai.png" type="Texture" id=2]
@@ -9,10 +9,6 @@
 [ext_resource path="res://Scripts/enemy_spawner.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Kulturdaten - Szenen/5 - Moko Shurai - Ekotoba Grid.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Szenes/Interface.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Assets/target_thumbnails/target1.png" type="Texture" id=10]
-[ext_resource path="res://Assets/target_thumbnails/target 2.png" type="Texture" id=11]
-[ext_resource path="res://Assets/target_thumbnails/target 3.png" type="Texture" id=12]
-[ext_resource path="res://Assets/target_thumbnails/target 4.png" type="Texture" id=13]
 [ext_resource path="res://Scripts/interface.gd" type="Script" id=14]
 [ext_resource path="res://Szenes/Light_Item.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Szenes/Jump_Item.tscn" type="PackedScene" id=16]
@@ -107,8 +103,8 @@ extents = Vector2( 35, 33 )
 polygon = PoolVector2Array( -36, -34, -36, 32, 34, 32, 34, -34 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 22 )
-images = [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ]
+position = Vector2( 0, 5 )
+script = ExtResource( 7 )
 
 [node name="Background_Container" type="Node" parent="."]
 
@@ -8778,7 +8774,7 @@ occluder = SubResource( 10 )
 [node name="wall1" type="Node2D" parent="vertical_walls"]
 
 [node name="wall270" type="StaticBody2D" parent="vertical_walls/wall1"]
-position = Vector2( -8722, -24 )
+position = Vector2( -8723, -55 )
 scale = Vector2( 2, 2 )
 
 [node name="wall" type="Sprite" parent="vertical_walls/wall1/wall270"]
@@ -8795,7 +8791,7 @@ shape = SubResource( 6 )
 occluder = SubResource( 10 )
 
 [node name="wall271" type="StaticBody2D" parent="vertical_walls/wall1"]
-position = Vector2( -8722, 103 )
+position = Vector2( -8723, 33 )
 scale = Vector2( 2, 2 )
 
 [node name="wall" type="Sprite" parent="vertical_walls/wall1/wall271"]
@@ -8829,7 +8825,7 @@ shape = SubResource( 6 )
 occluder = SubResource( 10 )
 
 [node name="wall272" type="StaticBody2D" parent="vertical_walls/wall1"]
-position = Vector2( -8722, -154 )
+position = Vector2( -8723, -183 )
 scale = Vector2( 2, 2 )
 
 [node name="wall" type="Sprite" parent="vertical_walls/wall1/wall272"]
@@ -9397,7 +9393,7 @@ shape = SubResource( 6 )
 occluder = SubResource( 10 )
 
 [node name="plattform18" type="StaticBody2D" parent="plattforms"]
-position = Vector2( -1317, 319 )
+position = Vector2( -1317, 318 )
 rotation = -3.14159
 scale = Vector2( 1.37679, -0.284358 )
 
@@ -9778,8 +9774,26 @@ occluder = SubResource( 10 )
 [node name="Light_Item" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1052, 32 )
 
+[node name="Light_Item2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1555, 1061 )
+
+[node name="Light_Item3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 4726, 520 )
+
+[node name="Light_Item4" parent="." instance=ExtResource( 15 )]
+position = Vector2( 7432, 1041 )
+
+[node name="Light_Item5" parent="." instance=ExtResource( 15 )]
+position = Vector2( -7924, 536 )
+
 [node name="Jump_Item" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1628, 36 )
+position = Vector2( -3692, 1035 )
+
+[node name="Jump_Item2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 6705, 514 )
+
+[node name="Jump_Item3" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1966, 543 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 17 )

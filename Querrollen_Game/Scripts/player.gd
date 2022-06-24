@@ -58,9 +58,9 @@ func player_dies():
 	$CollisionShape2D.disabled = true
 	$Timer.start()
 
-func change_jump_speed(amount):
+func change_gravity(amount):
 	$Sound_pickup_jumpHigh.play()
-	jump_speed -= amount
+	gravity -= amount
 
 func change_light_size(amount):
 	$Sound_pickup_lightBright.play()
