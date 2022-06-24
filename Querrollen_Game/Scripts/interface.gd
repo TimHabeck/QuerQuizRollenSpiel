@@ -20,7 +20,7 @@ func _ready():
 	desc_text = get_node("./CanvasLayer/description_label")
 	light_label = get_node("./CanvasLayer/light_label")
 	jump_label = get_node("./CanvasLayer/jump_label")
-	score_label = get_node("./CanvasLayer/score_label")
+	score_label = get_node("./CanvasLayer/container/score_label")
 	
 	
 	description("")
