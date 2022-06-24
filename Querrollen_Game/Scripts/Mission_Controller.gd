@@ -6,6 +6,8 @@ var targets = []
 	
 var current_target:float
 
+var counter=0
+
 func _ready():
 	randomize()
 	connect_scroll_signals()
@@ -38,6 +40,8 @@ func _timed_action(f : FuncRef, time, args=[]): #Used for items. This function c
 
 func _player_found_something(area_id):
 	if area_id == targets[current_target]["id"]:
+		counter+=1
+		interface._update_score(counter)
 		var desc = targets[current_target]["desc"]
 		interface. description(desc)
 		targets.remove(current_target)

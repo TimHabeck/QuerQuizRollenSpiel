@@ -103,7 +103,7 @@ extents = Vector2( 35, 33 )
 polygon = PoolVector2Array( -36, -34, -36, 32, 34, 32, 34, -34 )
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( 0, 5 )
+position = Vector2( -6, 5 )
 script = ExtResource( 22 )
 
 [node name="Background_Container" type="Node" parent="."]

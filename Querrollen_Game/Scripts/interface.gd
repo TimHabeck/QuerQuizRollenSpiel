@@ -4,6 +4,7 @@ var patch:NinePatchRect
 var desc_text:Label
 var light_label:Label
 var jump_label:Label
+var score_label:Label
 
 var countdown=0
 var counting=false
@@ -19,6 +20,7 @@ func _ready():
 	desc_text = get_node("./CanvasLayer/description_label")
 	light_label = get_node("./CanvasLayer/light_label")
 	jump_label = get_node("./CanvasLayer/jump_label")
+	score_label = get_node("./CanvasLayer/score_label")
 	
 	
 	description("")
@@ -65,6 +67,10 @@ func _jump_on():
 	print("jump on")
 	jump_countdown += 15
 	jump_on = true
+	
+func _update_score(score):
+	var text = "Score: " + str(int(round(score)))
+	score_label.set_text(text)
 	
 	
 	
